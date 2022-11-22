@@ -7,8 +7,9 @@ const BlogsLoader = () => {
 
             <Row justify="center">
                 {
-                    [...new Array(6)].map(() => (
+                    [...new Array(6)].map((x,i) => (
                         <Col
+                        key={i}
                             style={{ marginTop: '20px' }}
                             xs={{
                                 span: 18,

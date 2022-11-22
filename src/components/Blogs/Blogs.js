@@ -26,10 +26,7 @@ const Blogs = () => {
         content =
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                 {
-                    blogs
-                        // .filter(blog => blog.title.toLowerCase().search(keyword.trim().toLowerCase()) > -1)
-                        // .filter(filterByCategory)
-                        // .filter(filterByAuthor)
+                    blogs 
                         .map((blog, index) => (
                             <Blog key={blog.id} blog={blog} />
                         ))
